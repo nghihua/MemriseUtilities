@@ -92,9 +92,9 @@ function SpiderDone() {
   $("#WordListContainer").empty().append("<div><h2>Course Wordlist as TSV</h2><textarea id='Wordlist' style='width:800px; height:400px;'></textarea><p>&nbsp;</p><h2>Bare Wordlist as TSV</h2><textarea id='BareWordlist' style='width:800px; height:400px;'></textarea></div>");
   for (var Level in Wordlist) {
     for (LCV=0; LCV<Wordlist[Level].length; LCV++) {
-      WordlistText += Wordlist[Level][LCV].Word + "\t" + Wordlist[Level][LCV].Translation + "\t" + Wordlist[Level][LCV].SomethingB + "\t" + 
+      WordlistText += Wordlist[Level][LCV].Word + "\t" + Wordlist[Level][LCV].Translation + "\t" + Wordlist[Level][LCV].SomethingA + Wordlist[Level][LCV].SomethingB + "\t" + 
         CourseTag + "," + Level + "\n";
-      BareWordlistText = BareWordlistText += Wordlist[Level][LCV].Word + "\t" + Wordlist[Level][LCV].Translation + "\t" + Wordlist[Level][LCV].SomethingB + "\n";
+      BareWordlistText = BareWordlistText += Wordlist[Level][LCV].Word + "\t" + Wordlist[Level][LCV].Translation + "\t" + Wordlist[Level][LCV].SomethingA + "\t" + Wordlist[Level][LCV].SomethingB + "\n";
     }
   }
   $("#Wordlist").val(WordlistText.trimRight());
@@ -123,6 +123,7 @@ function ExtractTerms(Data) {
           Wordlist[LevelName].push({
             "Word": $(this).find("div.col_a").text(),
             "Translation": $(this).find("div.col_b").text(),
+            "SomethingA": $(this).find("div.col_c").text(),
             "SomethingB": $(this).find("div.col_d").text()
         });
     }
