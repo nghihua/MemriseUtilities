@@ -94,7 +94,7 @@ function SpiderDone() {
     for (LCV=0; LCV<Wordlist[Level].length; LCV++) {
       WordlistText += Wordlist[Level][LCV].Word + "\t" + Wordlist[Level][LCV].Translation + "\t" + 
         CourseTag + "," + Level + "\n";
-      BareWordlistText = BareWordlistText += Wordlist[Level][LCV].Word + "\t" + Wordlist[Level][LCV].Translation + "\t" + Wordlist[Level][LCV].SomethingA + "\t" + Wordlist[Level][LCV].SomethingB + "\n";
+      BareWordlistText = BareWordlistText += Wordlist[Level][LCV].Word + "\t" + Wordlist[Level][LCV].Translation + "\t" + Wordlist[Level][LCV].SomethingB + "\n";
     }
   }
   $("#Wordlist").val(WordlistText.trimRight());
@@ -123,7 +123,6 @@ function ExtractTerms(Data) {
           Wordlist[LevelName].push({
             "Word": $(this).find("div.col_a").text(),
             "Translation": $(this).find("div.col_b").text()
-            "SomethingA": $(this).find("div.col_c").text()
             "SomethingB": $(this).find("div.col_d").text()
         });
     }
