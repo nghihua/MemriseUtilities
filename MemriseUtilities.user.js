@@ -5,9 +5,9 @@
 // @grant         none
 // @description   Various helper functions for Memrise and some other EO sites.
 // @icon          http://cdn.altrn.tv/icons/memrise_10088.png?width=50&height=50&mode=crop&anchor=middlecenter
-// @homepageURL   https://github.com/scytalezero/MemriseUtilities
-// @updateURL     https://github.com/scytalezero/MemriseUtilities/raw/master/MemriseUtilities.user.js
-// @downloadURL   https://github.com/scytalezero/MemriseUtilities/raw/master/MemriseUtilities.user.js
+// @homepageURL   https://github.com/nghihua/MemriseUtilities
+// @updateURL     https://github.com/nghihua/MemriseUtilities/raw/master/MemriseUtilities.user.js
+// @downloadURL   https://github.com/nghihua/MemriseUtilities/raw/master/MemriseUtilities.user.js
 // @match         https://*.memrise.com/course/*
 // @match         http://akademio-de-esperanto.org/akademia_vortaro/*
 // @copyright     2012+, ScytaleZero
