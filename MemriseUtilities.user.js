@@ -122,7 +122,7 @@ function ExtractTerms(Data) {
         WordFilter === "all") {
           Wordlist[LevelName].push({
             "Word": $(this).find("div.col_a").text(),
-            "Translation": $(this).find("div.col_b").text()
+            "Translation": $(this).find("div.col_b").text(),
             "SomethingB": $(this).find("div.col_d").text()
         });
     }
